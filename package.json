@@ -1,16 +1,15 @@
 {
-  "name": "typescript-action",
-  "description": "GitHub Actions TypeScript template",
+  "name": "auto-release-draft",
+  "description": "Drafts a Githib release",
   "version": "0.0.0",
-  "author": "",
+  "author": "Ben",
   "private": true,
-  "homepage": "https://github.com/actions/typescript-action",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/typescript-action.git"
+    "url": "git+https://github.com/actions/auto-release-draft.git"
   },
   "bugs": {
-    "url": "https://github.com/actions/typescript-action/issues"
+    "url": "https://github.com/BenDipalmo-CAL/actions/typescript-action/issues"
   },
   "keywords": [
     "actions",
@@ -32,8 +31,8 @@
     "lint": "npx eslint . -c ./.github/linters/.eslintrc.yml",
     "package": "npx ncc build src/index.ts -o dist --source-map --license licenses.txt",
     "package:watch": "npm run package -- --watch",
-    "test": "npx jest",
-    "all": "npm run format:write && npm run lint && npm run test && npm run coverage && npm run package"
+    "all": "npm run format:write && npm run lint && npm run test && npm run coverage && npm run package",
+    "build": "tsc"
   },
   "license": "MIT",
   "jest": {
