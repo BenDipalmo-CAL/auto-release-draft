@@ -1,4 +1,4 @@
- // @ts-expect-error
+ // @ts-expect-error cannot use require and the import throws a build error
 import * as semver from 'semver'
 
 export function isSemVer(version: string): boolean {
