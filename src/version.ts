@@ -1,3 +1,4 @@
+ // @ts-ignore
 import * as semver from 'semver'
 
 export function isSemVer(version: string): boolean {
