@@ -2,6 +2,11 @@ name: 'Auto Release Draft'
 description: 'Drafts a github release'
 author: 'Ben'
 
+inputs:
+  repo-token:
+    description: the github token 
+    required: true
+
 outputs:
   release-url:
     description: 'The URL of the Github release'

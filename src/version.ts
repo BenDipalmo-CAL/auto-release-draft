@@ -8,7 +8,7 @@ export function isPreRelease(version: string): boolean {
     return semver.prerelease(version) != null;
 }
 
-export function removePrefix(version: string): boolean {
+export function removePrefix(version: string): string {
     const parsedVersion = semver.valid(version);
     return parsedVersion ? parsedVersion : version;
 }
