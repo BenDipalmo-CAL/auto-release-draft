@@ -1,4 +1,4 @@
- // @ts-ignore
+ // @ts-expect-error
 import * as semver from 'semver'
 
 export function isSemVer(version: string): boolean {
