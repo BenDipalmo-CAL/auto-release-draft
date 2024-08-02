@@ -3,7 +3,6 @@ import * as github from '@actions/github'
 import * as version from './version'
 import * as markdown from './markdown'
 
-
 export async function createReleaseDraft(
   versionTag: string,
   repoToken: string,
@@ -21,7 +20,7 @@ export async function createReleaseDraft(
     draft: true
   })
 
-  if (response.status != 201) {
+  if (response.status !== 201) {
     throw new Error(`Failed to create the release: ${response.status}`)
   }
 
